@@ -1,5 +1,6 @@
 language: node_js
 rvm:
+  "8"
 #setting up VM
 before_install:
   - sudo apt-get install -y nodejs
