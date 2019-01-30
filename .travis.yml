@@ -1,6 +1,6 @@
 language: node_js
-rvm:
-  "8"
+node_js:
+  - "8"
 #setting up VM
 before_install:
 #activities to be performed during building
