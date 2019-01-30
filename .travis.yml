@@ -3,7 +3,6 @@ rvm:
   "8"
 #setting up VM
 before_install:
-  - sudo apt-get install -y nodejs
 #activities to be performed during building
 jobs:
   include:
