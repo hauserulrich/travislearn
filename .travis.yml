@@ -2,7 +2,7 @@ language: node_js
 rvm:
 #setting up VM
 before_install:
-  - sudo apt-get install -y nodejs
+  - sudo apt-get install -y nodejs npm
   - sudo npm install -g htmllint-cli
 #activities to be performed during building
 jobs:
