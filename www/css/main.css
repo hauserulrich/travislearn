@@ -1,6 +1,5 @@
 body
 {
-	background-color: #000000;
-	color: #E0E0E0;
-    clr: red;
+	background-color: 'black';
+	color: rgb(222, 222, 222);
 }
