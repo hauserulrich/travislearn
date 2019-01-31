@@ -10,6 +10,7 @@ jobs:
     #install necessary node modules
     script: npm install
     -stage: lint
+    name: "Linting"
     #lint all html files in tree
     script: . node_modules/.bin/htmllint ./www/**/*index.html
     #lint all js files in tree
