@@ -21,4 +21,8 @@ jobs:
       name: "Linting CSS"
       #lint all js files in tree
       script: ./node_modules/.bin/stylelint ./www/**/*.css
+    -stage: jsdoc
+      name: "Generating JS documentation"
+      #lint all js files in tree
+      script: jsdoc -d=./jsdoc -r=10 ./www
 
