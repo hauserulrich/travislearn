@@ -1,7 +1,9 @@
 # Projekt, um Travis CI kennen zu lernen (in Verbindung mit einem Web-Projekt)
 
 #Lint:
-	-HTML-Code
+	-HTML
+	-JS
+	-CSS
 
 #Unit-Test:
 
