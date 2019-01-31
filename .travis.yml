@@ -26,4 +26,3 @@ jobs:
       #lint all js files in tree
       script: jsdoc -d=./jsdoc -r=10 ./www
 
-

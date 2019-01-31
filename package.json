@@ -7,7 +7,7 @@
     "escape-string-regexp": "^1.0.5",
     "htmllint-cli": "^0.0.7",
     "eslint": "^5.12.1",
-    "csslint": "^1.0.5"
+    "stylelint": "^9.10.1"
   },
   "devDependencies": {
     "eslint": "^5.12.1",
