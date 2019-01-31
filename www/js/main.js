@@ -1,20 +1,32 @@
-function enterbgcolor(){
+/**
+ *  setting of background colour, when an element is entered by the mouse.
+ */
+ function enterbgcolor(){
 	//	this.innerHTML = 'Called';
 	this.style.backgroundColor = '#808080';
 }
 
+/**
+ *  setting of background colour, when an element is left by the mouse.
+ */
 function leavebgcolor()
 {
 	//	this.innerHTML = 'Gone';
 	this.style.backgroundColor = '#404040';
 }
 
+/**
+ *  setting of background colour, when an element is clicked
+ */
 function clicked()
 {
 	//	this.innerHTML = 'Gone';
 	this.style.backgroundColor = '#ff0000';
 }
 
+/**
+ *  initialisation of the page, should be called after loading is completed (onload)
+ */
 function init()
 {
 	const lis = document.getElementsByTagName('li');
@@ -27,4 +39,8 @@ function init()
 		lis[i].onclick = clicked;
 	}
 }
-window.onload = init;
+
+/**
+ *  calling the initialisation after page loading is completed
+ */
+ window.onload = init;
