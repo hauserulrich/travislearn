@@ -9,11 +9,21 @@ jobs:
     -stage: before_install
     #install necessary node modules
     script: npm install
-    -stage: lint
-    #lint all html files in tree
-    script: . node_modules/.bin/htmllint ./www/**/*index.html
-    #lint all js files in tree
-    script: ./node_modules/.bin/eslint ./www/**/*.js
-    #lint all js files in tree
-    script: ./node_modules/.bin/csslint ./www/**/*.css
+    -stage: lint_html
+      name: "Linting HTML"
+      #lint all html files in tree
+      script: . node_modules/.bin/htmllint ./www/**/*index.html
+    -stage: lint_JS
+      name: "Linting JS"
+      #lint all js files in tree
+      script: ./node_modules/.bin/eslint ./www/**/*.js
+    -stage: lint_css
+      name: "Linting CSS"
+      #lint all js files in tree
+      script: ./node_modules/.bin/stylelint ./www/**/*.css
+    -stage: jsdoc
+      name: "Generating JS documentation"
+      #lint all js files in tree
+      script: jsdoc -d=./jsdoc -r=10 ./www
+
 
