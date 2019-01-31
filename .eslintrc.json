@@ -1,3 +1,23 @@
 {
-    "extends": "airbnb"
+	"parserOptions":
+	{
+		"ecmaVersion": 6,
+		"sourceType": "script",
+		"ecmaFeatures":
+		{
+			"jsx": true
+		}
+	},
+	"env":
+	{
+		"browser": true
+	},
+	"extends": "airbnb",
+	"rules":
+	{
+		"indent": ["error", "tab"],
+		"no-tabs": "off",
+		"no-plusplus": "off",
+		"brace-style": [2, "allman"]
+	}
 }
