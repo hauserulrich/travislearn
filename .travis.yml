@@ -6,6 +6,9 @@ before_install:
 #activities to be performed during building
 jobs:
   include:
+    -stage: before_install
+    #install necessary node modules
+    script: npm install
     -stage: lint
     #lint all html files in tree
-    script: node node_modules/htmllint-cli/bin/cli.js ./www/**/*index.html
+    script: node node_modules/.bin/htmllint ./www/**/*index.html
