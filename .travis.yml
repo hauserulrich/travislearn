@@ -11,4 +11,7 @@ jobs:
     script: npm install
     -stage: lint
     #lint all html files in tree
-    script: node node_modules/.bin/htmllint ./www/**/*index.html
+    script: . node_modules/.bin/htmllint ./www/**/*index.html
+    #lint all js files in tree
+    script: ./node_modules/.bin/eslint ./www/**/*.js
+
