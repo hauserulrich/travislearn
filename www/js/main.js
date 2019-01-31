@@ -1,5 +1,4 @@
-function enterbgcolor()
-{
+function enterbgcolor(){
 	//	this.innerHTML = 'Called';
 	this.style.backgroundColor = '#808080';
 }
