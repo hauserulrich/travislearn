@@ -1,46 +1,46 @@
 <html xmlns="https://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Minimal XHTML 5 Document</title>
-    <script type="text/javascript">
-    function enterbgcolor() {
-        //	this.innerHTML = 'Called';
-        this.style.backgroundColor = "#808080";
-    };
+	<title>Minimal XHTML 5 Document</title>
+	<script type="text/javascript">
+		function enterbgcolor() {
+			//	this.innerHTML = 'Called';
+			this.style.backgroundColor = "#808080";
+		};
 
-    function leavebgcolor() {
-        //	this.innerHTML = 'Gone';
-        this.style.backgroundColor = "#404040";
-    };
+		function leavebgcolor() {
+			//	this.innerHTML = 'Gone';
+			this.style.backgroundColor = "#404040";
+		};
 
-    function clicked() {
-        //	this.innerHTML = 'Gone';
-        this.style.backgroundColor = "#ff0000";
-    };
+		function clicked() {
+			//	this.innerHTML = 'Gone';
+			this.style.backgroundColor = "#ff0000";
+		};
 
-    function init() {
-        var lis = document.getElementsByTagName("li");
+		function init() {
+			var lis = document.getElementsByTagName("li");
 
-        for (var i = 0; i < lis.length; i++) {
-            lis[i].onmouseover = enterbgcolor;
-            lis[i].onmouseout = leavebgcolor;
-            lis[i].onclick = clicked;
-        }
-    };
-    window.onload = init;
-    </script>
+			for (var i = 0; i < lis.length; i++) {
+				lis[i].onmouseover = enterbgcolor;
+				lis[i].onmouseout = leavebgcolor;
+				lis[i].onclick = clicked;
+			}
+		};
+		window.onload = init;
+	</script>
 </head>
 
 <body>
-    <h1>
+	<h1>
 		Learning Travis CI
 	</h1>
-    <h2>A list to play with Javascript</h2>
-    <ul>
-        <li>First Element</li>
-        <li>Second Element</li>
-        <li>Third Element</li>
-    </ul>
+	<h2>A list to play with Javascript</h2>
+	<ul>
+		<li>First Element</li>
+		<li>Second Element</li>
+		<li>Third Element</li>
+	</ul>
 </body>
 
 </html>
