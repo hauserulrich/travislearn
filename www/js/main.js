@@ -23,6 +23,11 @@ function clicked()
 	//	this.innerHTML = 'Gone';
 	this.style.backgroundColor = '#ff0000';
 }
+function contextclick()
+{
+	//	this.innerHTML = 'Gone';
+	this.style.backgroundColor = '#ff0000';
+}
 
 /**
  *  initialisation of the page, should be called after loading is completed (onload)
@@ -37,6 +42,7 @@ function init()
 		lis[i].onmouseover = enterbgcolor;
 		lis[i].onmouseout = leavebgcolor;
 		lis[i].onclick = clicked;
+    lis[i].oncontextmenu = contextclick;
 	}
 }
 
