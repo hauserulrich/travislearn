@@ -1,10 +1,11 @@
 language: node_js
 node_js:
   - "8"
+
 #setting up VM
 before_install:
     #install necessary node modules
-    -npm install htmllint
+    - npm install htmllint
 #activities to be performed during building
 jobs:
   include:
