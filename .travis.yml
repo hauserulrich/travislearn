@@ -1,3 +1,11 @@
 language: node_js
 node_js:
   - "8"
+#activities to be performed during building
+#before_install:
+
+jobs:
+  -stage: lint_html
+    name: "Linting HTML"
+    #lint all html files in tree
+    script: . node_modules/.bin/htmllint ./www/**/*.html
