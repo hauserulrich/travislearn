@@ -1,12 +1,15 @@
 language: node_js
 node_js:
   - "8"
-
 #setting up VM
-install:
+before_install:
+#activities to be performed during building
+jobs:
+  include:
+    -stage: before_install
     #install necessary node modules
-    - "npm install htmllint"
-
-#lint all html files
-script:
-  - "htmllint ./www/**/*.html"
+    script: npm install
+    -stage: lint_html
+      name: "Linting HTML"
+      #lint all html files in tree
+      script: . node_modules/.bin/htmllint ./www/**/*index.html
