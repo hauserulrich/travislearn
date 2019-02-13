@@ -2,3 +2,7 @@ language: node_js
 node_js:
   - "8"
 
+#setting up VM
+before_install:
+    #install necessary node modules
+    - npm install htmllint
