@@ -1,7 +1,8 @@
 /**
  *  setting of background colour, when an element is entered by the mouse.
  */
- function enterbgcolor(){
+function enterbgcolor()
+{
 	//	this.innerHTML = 'Called';
 	this.style.backgroundColor = '#808080';
 }
@@ -23,6 +24,10 @@ function clicked()
 	//	this.innerHTML = 'Gone';
 	this.style.backgroundColor = '#ff0000';
 }
+
+/**
+ *  clicked into something
+ */
 function contextclick()
 {
 	//	this.innerHTML = 'Gone';
@@ -42,11 +47,11 @@ function init()
 		lis[i].onmouseover = enterbgcolor;
 		lis[i].onmouseout = leavebgcolor;
 		lis[i].onclick = clicked;
-    lis[i].oncontextmenu = contextclick;
+		lis[i].oncontextmenu = contextclick;
 	}
 }
 
 /**
  *  calling the initialisation after page loading is completed
  */
- window.onload = init;
+window.onload = init;

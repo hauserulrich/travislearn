@@ -1,28 +1,14 @@
 language: node_js
 node_js:
   - "8"
-#setting up VM
-before_install:
-#activities to be performed during building
-jobs:
-  include:
-    -stage: before_install
-    #install necessary node modules
-    script: npm install
-    -stage: lint_html
-      name: "Linting HTML"
-      #lint all html files in tree
-      script: . node_modules/.bin/htmllint ./www/**/*.html
-    -stage: lint_JS
-      name: "Linting JS"
-      #lint all js files in tree
-      script: ./node_modules/.bin/eslint ./www/**/*.js
-    -stage: lint_css
-      name: "Linting CSS"
-      #lint all js files in tree
-      script: ./node_modules/.bin/stylelint ./www/**/*.css
-    -stage: jsdoc
-      name: "Generating JS documentation"
-      #lint all js files in tree
-      script: jsdoc -d=./jsdoc -r=10 ./www
 
+#do before testing
+before_script:
+    #install necessary node modules
+    - "npm install htmllint eslint stylelint"
+
+#lint all html files in tree
+script:
+  - "./node_modules/.bin/htmllint ./www/**/*.html"
+  - "./node_modules/.bin/eslint ./www/**/*.js"
+  - "./node_modules/.bin/stylelint ./www/**/*.css"
