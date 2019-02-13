@@ -2,5 +2,11 @@ language: node_js
 node_js:
   - "8"
 
+#setting up VM
+install:
+    #install necessary node modules
+    - "npm install htmllint"
+
 #lint all html files
-script: . node_modules/.bin/htmllint ./www/**/*.html
+script:
+  - ". node_modules/.bin/htmllint ./www/**/*.html"
