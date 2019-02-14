@@ -16,4 +16,5 @@ script:
   - "npm test"
 
 deploy:
-  - "./node_modules/.bin/jsdoc -d ./doc ./www/**/*.js"
+  provider: script
+  script: "./node_modules/.bin/jsdoc -d ./doc ./www/**/*.js"
