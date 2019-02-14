@@ -9,4 +9,4 @@ function testFactorial()
 	expect(res).toBe(6);
 }
 
-test('FACTORIAL calculate', testFactorial());
+test('FACTORIAL calculate', testFactorial);

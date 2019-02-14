@@ -18,6 +18,10 @@
 		"jest/globals": true
 	},
 	"extends": "airbnb",
+	"extends":
+	[
+		"plugin:jest/recommended"
+	],
 	"rules":
 	{
 		"yoda": 
