@@ -12,4 +12,4 @@ JSDoc erstellt eine Dokumentation im Verzeichnis `jsdoc`
 
 ## Unit-Test:
 
-getestet wird der JS-Code, GUI-Test ist zu aufwaendig und im Unterricht nicht vorgesehen.
+getestet wird der JS-Code, GUI-Test ist zu aufwaendig und im Unterricht nicht vorgesehen, zumindest jetzt noch nicht
