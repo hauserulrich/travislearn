@@ -5,14 +5,11 @@
 */
 function dofancymath(someint)
 {
-	if (1==someint)
+	if (1 === someint)
 	{
 		return 1;
 	}
-	else
-	{
-		return someint*dofancymath(someint-1);
-	}
+	return someint * dofancymath(someint - 1);
 }
 
 module.exports = dofancymath;
