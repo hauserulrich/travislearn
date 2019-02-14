@@ -14,7 +14,4 @@ script:
   - "./node_modules/.bin/eslint ./tests/**/*.js"
   - "./node_modules/.bin/stylelint ./www/**/*.css"
   - "npm test"
-
-deploy:
-  provider: script
-  script: "./node_modules/.bin/jsdoc -d ./doc ./www/**/*.js"
+  - "./node_modules/.bin/jsdoc -d ./doc ./www/**/*.js"
