@@ -8,9 +8,14 @@
 			"jsx": true
 		}
 	},
+	"plugins":
+	[
+		"jest"
+	],
 	"env":
 	{
-		"browser": true
+		"browser": true,
+		"jest/globals": true
 	},
 	"extends": "airbnb",
 	"rules":
