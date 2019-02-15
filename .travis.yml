@@ -5,7 +5,7 @@ node_js:
 #do before testing
 before_script:
     #install necessary node modules
-    - "npm install"
+#    - "npm install"
 
 #lint all html files in tree
 script:
